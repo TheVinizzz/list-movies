@@ -1,4 +1,4 @@
-export interface IBodyParams {
+export interface IQueryParams {
   i: string;
   t: string;
 }

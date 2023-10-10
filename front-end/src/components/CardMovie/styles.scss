@@ -1,0 +1,32 @@
+.card-movie {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    width: 100%;
+    justify-content: space-between;
+
+    .description {
+        .plot {
+            width: 70%;
+        }
+        .actor, .review {
+            display: flex;
+            align-items: center;
+
+            h3 {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        
+        .card-movie {
+            flex-direction: column;
+        }
+
+}

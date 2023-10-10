@@ -1,17 +1,17 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { lastValueFrom } from 'rxjs';
-import { IBodyParams, IResponseOmdb } from '../interface/omdb.type';
+import { IQueryParams, IResponseOmdb } from '../interface/omdb.type';
 
 @Injectable()
 export class OmdbService {
   constructor(private readonly httpService: HttpService) {}
 
-  async getMovies(body: IBodyParams): Promise<IResponseOmdb> {
+  async getMovies(query: IQueryParams): Promise<IResponseOmdb> {
     const url = 'https://www.omdbapi.com/?i=tt3896198';
     const config = {
       params: {
-        ...body,
+        ...query,
         apikey: '531d471f',
       },
     };

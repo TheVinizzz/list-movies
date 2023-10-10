@@ -1,0 +1,18 @@
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.button-search, .button-reset {
+    padding: 0 20px;
+    margin-left: 10px;
+    background-color: #c0c0c0;
+    border: none;
+    color: #fff;
+}
